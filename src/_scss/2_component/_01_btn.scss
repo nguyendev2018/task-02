@@ -1,0 +1,28 @@
+.c-btn {
+    &--second {
+        background: $second-color;
+        border-radius: 28px;
+        border: 1px solid $second-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        width: 306px;
+        height: 55px;
+        font-size: 2.4rem;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    &--primary {
+        background-image: url("/assets/img/button/img-btn.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 198px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        color: $white;
+    }
+}

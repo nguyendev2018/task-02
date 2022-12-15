@@ -1,0 +1,28 @@
+<%- include('_layouts/layout', { title: 'Home page' }); -%>
+
+<!-- @meta -->
+<meta name="description" content="Home page">
+<!-- @@meta -->
+
+<!-- @content -->
+<div class="p-home">
+   
+            <div class="c-brand">
+                <div class="c-brand__list">
+                    <% if(typeof brands != 'undefined') { %>
+                        <% brands.imgs && brands.imgs.forEach(item => { %>
+                    <a class="c-brand__item">
+                        <img src="<%= item.img %>" alt="<%= item.alt %>" class="img-fluid">
+                    </a>
+                    <% }) %>
+                    <% } %>
+                </div>
+            </div>
+     
+</div>
+
+<!-- @@content -->
+
+<!-- @script -->
+
+<!-- @@script -->

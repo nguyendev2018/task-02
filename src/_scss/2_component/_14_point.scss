@@ -1,0 +1,14 @@
+.c-point{}
+
+.c-brand {
+    &__list {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        cursor: pointer;
+        display: block;
+    }
+}

@@ -1,0 +1,33 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+}
+/* Main menu
+------------------------------------------------------------*/
+.c-header {
+    &__menulist {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 65px;
+        left: 0;
+    }
+
+    &__menuitem {
+        font-size: 1.6rem;
+        line-height: 2;
+        letter-spacing: 0.1;
+        padding-left: 10px;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

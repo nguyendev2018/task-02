@@ -1,0 +1,36 @@
+.c-footer {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    &__menu {
+        li {
+            line-height: 1.714285;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__itemlogo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 145px;
+        display: block;
+    }
+
+    &__bg {
+        width: 100%;
+        min-height: 260px;
+        background-image: url("/assets/img/footer/banner-footer.jpg");
+        background-size: cover;
+        border-radius: 50px;
+    }
+}

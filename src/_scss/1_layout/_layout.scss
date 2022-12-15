@@ -1,0 +1,29 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    //TODO fz14 +lh21
+    font-family: $font;
+    font-size: 1.4rem;
+    font-weight: 400;
+    min-width: $container;
+    color: $black33;
+    line-height: 1.5;
+    background: url("./assets/img/bg/bg-header.png");
+    padding: 30px;
+    @include sp {
+        min-width: $width-mobile;
+    }
+}
+
+
+//-------------------------------------------------------
+.l-container {
+    width: $container;
+    margin: 0 auto;
+}
+//-------------------------------------------------------
+.c-wrapper {
+ 
+    background: $white;
+    height: 100vh;
+}

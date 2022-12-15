@@ -1,0 +1,51 @@
+{
+  "linklists": {
+    "main": [
+      {
+        "title": "トップ",
+        "url": "#link1"
+      },
+      {
+        "title": "毎日にハッカ油",
+        "url": "#link2"
+      },
+      {
+        "title": "製品情報",
+        "url": "#link3"
+      },
+      {
+        "title": "Q&A",
+        "url": "#link4"
+      },
+      {
+        "title" : "ハッカ油コラム",
+        "url" : "#link5"
+      },
+      { 
+        "title" : "ハッカ油ムービー",
+        "url" : "#link6"
+      }
+    ]
+  },
+  "brands" : {
+    "imgs":[
+    {
+      "img" : "./assets/img/brand/amazon.png",
+      "alt" : "amazon"
+    },
+    {
+      "img" : "./assets/img/brand/hedgehog.png",
+      "alt" : "hedgehog"
+    },
+    {
+      "img" : "./assets/img/brand/kenko.png",
+      "alt" : "kenko"
+
+    },
+    {
+      "img" : "./assets/img/brand/lohaco.png",
+      "alt" : "lohaco"
+    }
+  ]
+  }
+}

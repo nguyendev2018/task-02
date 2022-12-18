@@ -1,5 +1,5 @@
 .c-btn {
-    &--second {
+    &__second {
         background: $second-color;
         border-radius: 28px;
         border: 1px solid $second-color;
@@ -14,7 +14,7 @@
         cursor: pointer;
     }
 
-    &--primary {
+    &__primary {
         background-image: url("/assets/img/button/img-btn.png");
         background-size: cover;
         background-repeat: no-repeat;

@@ -1,33 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      <%= (typeof title != "undefined" ? title : "Page title") %>
-    </title>
-    {{ meta }}
-    <script type="module" src="/_scss/style.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 
-    {{ head }}
-  </head>
-  <body>
-    <div class="c-wrapper">
-      <div class="p-home">
-        <%- include('_partials/header'); -%>
-  
-        {{ content }}
-    
-        <%- include('_partials/footer'); -%>
-      </div>
-    </div>
- 
-  
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= (typeof title !="undefined" ? title : "Page title" ) %>
+  </title>
+  {{ meta }}
+  <script type="module" src="/_scss/style.js"></script>
+  <link rel="stylesheet" href="./assets/css/fontawesome.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 
-    {{ script }}
-    <script src="/assets/js/main.js"></script>
-  </body>
+  {{ head }}
+</head>
+
+<body>
+  <div class="p-leaf">
+    <img src="./assets/img/leaf/leaf-top.png" alt="leaf-top" class="p-leaf__top">
+    <img src="./assets/img/leaf/leaf-right.png" alt="leaf-right" class="p-leaf__right">
+  </div>
+  <div class="p-wrapper">
+
+    <%- include('_partials/header'); -%>
+
+      <!-- {{ content }} -->
+
+      <!-- <%- include('_partials/footer'); -%> -->
+
+  </div>
+
+
+
+  {{ script }}
+  <script src="/assets/js/main.js"></script>
+</body>
+
 </html>

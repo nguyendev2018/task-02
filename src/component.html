@@ -1,15 +1,99 @@
 <%- include('_layouts/layout', { title: 'Component' }); -%>
 
-<!-- @meta -->
-<meta name="description" content="Component">
-<!-- @@meta -->
+  <!-- @meta -->
+  <meta name="description" content="Component">
+  <!-- @@meta -->
 
-<!-- @content -->
-<a href="#" class=" c-btn--second">
-    ハッカ？ミント？
-</a>
-<!-- ANCHOR  banner  -->
+  <!-- @content -->
 
- <!-- ANCHOR fix ul li -->
- 
-<!-- @@content -->
+
+
+  <!-- @@content -->
+  <section class="c-brand">
+    <div class="c-brand__list">
+      <% if(typeof brands !='undefined' ) { %>
+        <% brands.imgs && brands.imgs.forEach(item=> { %>
+          <a class="c-brand__item">
+            <img src="<%= item.img %>" alt="<%= item.alt %>" class="img-fluid">
+          </a>
+          <% }) %>
+            <% } %>
+    </div>
+  </section>
+  <seciton class="c-point1">
+    <div class="c-point">
+      <div class="c-point__boxinfo">
+        <div class="c-point__boxnumber">
+          <img src="./assets/img/q&a/col-1.jpg" alt="img-col" class="img-fluid">
+          <div class="c-point__boxlayer">
+            <img src="./assets/img/q&a/hakkayu-column.png" alt="number" class="c-point__column">
+            <span class="c-point__itemnumber">11</span>
+          </div>
+
+        </div>
+        <div class="c-point__boxtext">
+          <p class="c-point__textdesc">風邪をひきやすい冬も安心</p>
+          <h3 class="c-point__textitle">
+            風邪やインフルエンザシーズンにもハッカ油
+          </h3>
+
+        </div>
+        <p class="c-point__desc">
+          風邪をひきやすくなる冬、朝起きたら喉がガラガラなんていうことはありませんか？　実はこれ、夜寝ている間にウイルスが体内で増殖してしまった証拠かもしれません。寒さと乾燥の厳しい冬の風邪は、夜寝ている間に悪化しやすいといわれています。そんな季節に役立つハッカ油の使い方をご紹介します。
+        </p>
+      </div>
+      <div class="c-point__boxarrow">
+        <picture>
+          <source media="(min-width:767px)" srcset="./assets/img/q&a/arrow/arrow-right.svg">
+          <img src="./assets/img/q&a/arrow/arrow-down.svg" alt="arrow-down">
+        </picture>
+      </div>
+    </div>
+    <div class="l-container">
+      <div class="c-point__list">
+        <div class="c-point__item">
+          <div class="c-point__itemimg">
+            <img src="./assets/img/point/point1/img-1.jpg" alt="" class="img-fluid">
+            <a href="#" class="c-point__itembutton">
+              <img src="./assets/img/button/img-more.png" alt="img-more">
+            </a>
+          </div>
+          <div class="c-point__itemlayer">
+            <h3>風邪やインフルエンザシーズンにもハッカ油</h3>
+            <p>湿気の多い梅雨の季節の部屋干しにはハッカ油が大活躍！ 優しい自然な香りですっきりさわやか。</p>
+            <a href="#" class="c-btn__primary u-text--center">
+              ハッカ油コラムへ
+            </a>
+          </div>
+
+        </div>
+        <div class="c-point__item">
+          <div class="c-point__itemimg">
+            <img src="./assets/img/point/point1/img-1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="c-point__itemtext">
+            <p>風邪をひきやすい冬も安心</p>
+            <h3>風邪やインフルエンザシーズンにもハッカ油</h3>
+          </div>
+          <p>
+            防虫、消臭、除菌、リラックスなど、さまざまな効果が期待できるハッカ油は使えば使うほど万能で、生活のあらゆる場面で欠かせなくなってきます。しかし、だからこそ知っておきたいのがハッカ油を安全に使うためのルールです。ハッカ油ならではの性質に着目して、保管から具体的な使う上での注意点についてご紹介します。
+          </p>
+        </div>
+        <div class="c-point__item">
+          <div class="c-point__itemimg">
+            <img src="./assets/img/point/point1/img-1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="c-point__itemtext">
+            <p>風邪をひきやすい冬も安心</p>
+            <h3>風邪やインフルエンザシーズンにもハッカ油</h3>
+          </div>
+          <p>
+            防虫、消臭、除菌、リラックスなど、さまざまな効果が期待できるハッカ油は使えば使うほど万能で、生活のあらゆる場面で欠かせなくなってきます。しかし、だからこそ知っておきたいのがハッカ油を安全に使うためのルールです。ハッカ油ならではの性質に着目して、保管から具体的な使う上での注意点についてご紹介します。
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </seciton>

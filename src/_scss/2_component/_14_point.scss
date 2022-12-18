@@ -1,4 +1,83 @@
-.c-point{}
+.c-point {
+    &__list {
+        display: flex;
+        --spacing: 20px;
+        margin-left: calc(var(--spacing) * (-1));
+    }
+
+    &__item {
+        --widthBox: 33.33%;
+        --spacing: 20px;
+        --height: 360px;
+        width: calc(var(--widthBox) - var(--spacing));
+        display: block;
+        position: relative;
+        margin-left: calc(var(--spacing));
+        height: var(--height);
+        position: relative;
+           
+        &button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        &img {
+            width: 100%;
+            height: 100%;
+
+            >img {
+                border-radius: 50px;
+            }
+        }
+
+        &layer {
+            --widthBox: 33.33%;
+            --height: 360px;
+            --spacing: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.8);
+            width: calc(100% - var(--spacing));
+            height: calc(100% - var(--spacing));
+            z-index: 2;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 46px;
+        }
+    }
+
+    &__box {
+        &info {
+            display: flex;
+        }
+
+        &number {
+            position: relative;
+            width: 275px;
+            height: 100px;
+            margin-right: 20px;
+
+            img:first-child {
+                border-radius: 10px;
+            }
+        }
+
+        &layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
 
 .c-brand {
     &__list {
@@ -10,5 +89,9 @@
     &__item {
         cursor: pointer;
         display: block;
+
+        >img {
+            border-radius: 20px;
+        }
     }
 }

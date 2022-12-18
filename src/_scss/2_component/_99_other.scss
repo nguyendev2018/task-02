@@ -4,3 +4,34 @@ other
 
 /*
 ------------------------------------------------------------*/
+.p-leaf {
+    &__top,
+    &__right {
+        position: fixed;
+        z-index: 100;
+        transition: all 0.5s linear;
+    }
+
+    &__top {
+        top: 0;
+        left: 687px;
+        transition: all 0.5s linear;
+        width: 302px;
+        height: 213px;
+        @include sp {
+            width: 202px;
+            height: 157px;
+        }
+    }
+
+    &__right {
+        top: 468px;
+        right: -32px;
+        width: 267px;
+        height: 352px;
+        @include sp{
+            width: 183px;
+            height: 196px;
+        }
+    }
+}

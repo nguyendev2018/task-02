@@ -5,11 +5,15 @@ other
 /*
 ------------------------------------------------------------*/
 .p-leaf {
+    pointer-events: none;
+
     &__top,
     &__right {
         position: fixed;
         z-index: 100;
         transition: all 0.5s linear;
+        z-index: 2;
+        
     }
 
     &__top {
@@ -19,19 +23,32 @@ other
         width: 302px;
         height: 213px;
         @include sp {
-            width: 202px;
-            height: 157px;
+            width: 114px;
+            height: auto;
+            top: 0;
+            left: 95px;
         }
     }
 
     &__right {
         top: 468px;
-        right: -32px;
+        right: -27px;
         width: 267px;
         height: 352px;
-        @include sp{
-            width: 183px;
-            height: 196px;
+        @include tab {
+            width: 150px;
+        }
+        @include sp {
+            width: 89px;
+            height: auto;
+            top: 489px;
+            right: -4px;
+            transform: rotate(-8deg);
         }
     }
+}
+
+.c-line {
+    width: 35px;
+    border-bottom: 2px solid $black00;
 }

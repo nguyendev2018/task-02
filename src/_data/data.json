@@ -34,10 +34,6 @@
       "alt" : "amazon"
     },
     {
-      "img" : "./assets/img/brand/hedgehog.png",
-      "alt" : "hedgehog"
-    },
-    {
       "img" : "./assets/img/brand/kenko.png",
       "alt" : "kenko"
 
@@ -45,7 +41,13 @@
     {
       "img" : "./assets/img/brand/lohaco.png",
       "alt" : "lohaco"
+    },
+    {
+      "img" : "./assets/img/brand/hedgehog.png",
+      "alt" : "hedgehog"
     }
+   
+    
   ]
   },
   "points" : {
@@ -53,9 +55,9 @@
       {
         "url" : "./assets/img/point/point1/img-1.jpg",
         "title": "部屋干しも安心",
-        "desc" : "湿気の多い梅雨の季節の部屋干しにはハッカ油が大活躍！ 優しい自然な香りですっきりさわやか。"
+        "desc" : "キッチンなどに現れる嫌な害虫はハッカ油がシャットアウト！ 清涼感あふれる香りでお部屋を守ります。"
       },
-      {
+        {
          "url" : "./assets/img/point/point1/img-2.jpg",
         "title" : "気分転換に",
         "desc" : "集中力が低下してきたときはハッカ油でリフレッシュ。気分もすっきり眠気覚ましに最適です。"
@@ -87,7 +89,7 @@
       {
         "url" : "./assets/img/point/point3/img-1.jpg",
         "title" : "嫌な害虫を撃退",
-        "desc" : "キッチンなどに現れる嫌な害虫はハッカ油がシャットアウト！清涼感あふれる香りでお部屋を守ります。"
+        "desc" : "キッチンなどに現れる嫌な害虫はハッカ油がシャットアウト！ 清涼感あふれる香りでお部屋を守ります。"
       },
       {
         "url" : "./assets/img/point/point3/img-2.jpg",

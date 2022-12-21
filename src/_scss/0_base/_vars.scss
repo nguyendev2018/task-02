@@ -1,9 +1,12 @@
 //ANCHOR container
-$container--big: 1030px ;
-$container--small: 863px;
+$container--w1030: 1030px ;
+$container--w863: 863px;
+$container--w1100: 1100px;
+$container--w1063 : 1063px;
 //ANCHOR fonts
 $font: "Sawarabi Mincho", serif;
 // ANCHOR mobile 
+$width-desktop: 1920px;
 $width-mobile: 375px;
 //ANCHOR color common
 $primary-color: #176b6a ;

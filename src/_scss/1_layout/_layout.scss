@@ -13,14 +13,34 @@ body {
     line-height: 1.5;
     background: url("./assets/img/bg/bg-header.png");
     width: 100%;
-    height: 100%;
+    height: auto;
     position: relative;
+    margin: 0 auto;
     padding: 30px;
+
     @include sp {
         padding: 15px;
+ 
     }
-}
 
+    &::before {
+        --spacing: 60px;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: $white;
+        width: calc(100% - var(--spacing));
+        height: calc(100% - var(--spacing));
+        z-index: -1;
+        @include sp {
+            --spacing: 30px;
+        }
+    }
+  
+}
 
 //-------------------------------------------------------
 .l-container {
@@ -36,22 +56,16 @@ body {
         margin: 0 auto;
     }
 
-    &--w1100 {
-        max-width: $container--w1100;
+    &--w1120 {
+        max-width: $container--w1120;
         width: 100%;
         margin: 0 auto;
     }
-    &--w1063{
+
+    &--w1063 {
         max-width: $container--w1063;
         width: 100%;
         margin: 0 auto;
     }
 }
 //-------------------------------------------------------
-.l-wrapper {
-    background: $white;
-    margin: 0 auto;
-    @include sp {
-        padding: 0 15px;
-    }
-}

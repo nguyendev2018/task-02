@@ -10,9 +10,8 @@ other
     &__top,
     &__right {
         position: fixed;
-        z-index: 100;
+        z-index: 6;
         transition: all 0.5s linear;
-        z-index: 2;
         
     }
 
@@ -50,5 +49,9 @@ other
 
 .c-line {
     width: 35px;
+    transform: translateX(17px);
     border-bottom: 2px solid $black00;
+    @include sp {
+        transform: translateX(0);
+    }
 }

@@ -12,7 +12,7 @@
   <script type="module" src="/_scss/style.js"></script>
   <link rel="stylesheet" href="./assets/css/fontawesome.css">
   <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   {{ head }}
 </head>
 
@@ -21,10 +21,16 @@
     <img src="./assets/img/leaf/leaf-top.png" alt="leaf-top" class="p-leaf__top">
     <img src="./assets/img/leaf/leaf-right.png" alt="leaf-right" class="p-leaf__right">
   </div>
+  <div class="l-container">
     <%- include('_partials/header'); -%>
       {{ content }}
-      <!-- <%- include('_partials/footer'); -%> -->
+      <%- include('_partials/footer'); -%>
+  </div>
+
   {{ script }}
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="/assets/js/main.js"></script>
 </body>
 

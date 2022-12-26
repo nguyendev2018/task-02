@@ -17,6 +17,22 @@
 .u-padsp15 {
     @include sp {
         padding-left: 15px;
-        padding-bottom: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+.u-showhide {
+    display: block;
+    @include sp {
+        display: none;
+    } 
+}
+
+.u-hideshow {
+    display: none;
+    @include sp {
+        display: block;
     }
 }

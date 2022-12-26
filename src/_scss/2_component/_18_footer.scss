@@ -2,17 +2,23 @@
     &__list {
         display: flex;
         justify-content: space-between;
-        margin-top: 30px;
+        margin-top: 110px;
         @include sp { 
             flex-direction: column;
             align-items: center;        }
     }
 
+    &__bg {
+        border-radius: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+
     &__menu {
         li {
             line-height: 2;
-            margin-bottom: 10px;
-
+           margin-bottom: -3px;
+            letter-spacing: 0.1em;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -32,11 +38,4 @@
         display: block;
     }
 
-    &__bg {
-        width: 100%;
-        min-height: 260px;
-        background-image: url("/assets/img/footer/banner-footer.jpg");
-        background-size: cover;
-        border-radius: 50px;
-    }
 }

@@ -1,0 +1,526 @@
+.c-uses {
+    padding-top: 59px;
+    padding-left: 43.5px;
+    padding-right: 43.5px;
+    padding-bottom: 170px;
+    overflow: hidden;
+    @include sp {
+        padding-top: 27px;
+        padding-bottom: 0;
+        padding-left: 26.5px;
+        padding-right: 26.5px;
+    }
+    &__boxtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: -55px;
+    }
+
+    &__boxcenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        &small {
+            font-size: 2rem;
+            line-height: 3;
+            letter-spacing: 2px;
+            margin-bottom: -13px;
+            margin-left: -7px;
+            @include sp {
+                font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    margin-left: -2px;
+    margin-bottom: -6px;
+            }
+        }
+
+        &big {
+            font-size: 4.6rem;
+            line-height: 1;
+            letter-spacing: 9px;
+            @include sp {
+                font-size: 2rem;
+             letter-spacing: 4px;
+            }
+            
+        }
+    }
+
+    &__list {
+        @include tab {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        &top,
+        &bottom {
+            display: flex;
+            flex-wrap: nowrap;
+            @include tab {
+                flex-wrap: wrap;
+                
+            }
+        }
+
+        &top {
+            margin-top: 2px;
+            @include tab {
+                margin-top: 100px;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            @include sp{
+                margin-top: 62px;
+            }
+        }
+
+        &bottom {
+            margin-top: 73px;
+            @include tab {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: max-content;
+        @include tab {
+            width: 50%;
+            margin-top: 30px;
+            justify-content: center;
+        }
+        @include sp {
+            width: 100%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &recommend {
+            &::before {
+                width: 117px;
+                height: 67px;
+                background-image: url("./assets/img/appliances/label-recommend.png");
+                top: -32px;
+                left: -38px;
+                @include tab {
+                    top: 0;
+                    width: 109px;
+                }
+            }
+        }
+
+        &daily {
+            &::before {
+                width: 154px;
+                height: 36px;
+                background-image: url("./assets/img/appliances/daily-use.png");
+                @include tab {
+                    width: 127px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                @include sp {
+                    top: 4px;
+                    left: 72px;
+                    width: 141px;
+                    height: 32px;
+                    transform: translateX(-64px);
+                }
+            }
+
+          
+
+            .c-uses {
+                &__itemimg {
+                    // --withImg: 154px;
+                    // width: var(--widthImg);
+                    position: relative;
+                    padding-top: 52px;
+                    margin-left: 50px;
+                    display: flex;
+                    justify-content: center;
+                    @include tab {
+                        margin-left: 74px;
+                    }
+                    // @include tab {
+                    //     width: calc(var(--withImg) / 2);
+                    // }
+                }
+            }
+        }
+
+        &bottle {
+            justify-content: flex-start;
+            .c-uses {
+                &__textchild {
+                    padding-left: 10px;
+                }
+
+                &__itemtext {
+                    padding-left: 8px;
+                    margin-left: 0;
+                    margin-bottom: -6px;
+                    position: relative;   
+                    @include sp {
+                        margin-bottom: -25px;
+                        line-height: 1.5;
+                    }         
+                }
+
+                &__itemimg {
+                    @include sp {
+                        width: 30px;
+                        margin-left: 62px;
+                        padding-top: 37px;
+                    }
+                }
+            }
+        }
+
+        &jar {
+            top: 61px;
+            left: 37px;
+            @include tab {
+                top: 0;
+                left: 0;
+            }
+            @include sp {
+                flex-direction: row-reverse;
+                justify-content: flex-start;
+                margin-top: 16px;
+                margin-left: -13px;
+            }
+
+            .c-uses {
+                &__itemimg {
+                    img {
+                        width: 53px;
+                        @include sp {
+                            width: 35px;
+                        }
+                    }
+                   
+                }
+
+                &__itemtext {
+                    padding-left: 17px;
+                    margin-left: -10px;
+                    margin-bottom: 29px;
+                    position: relative;
+                    white-space: nowrap;
+                    @include tab1200 {
+                        width: 98px;
+                        white-space: normal;
+                    }
+                    @include sp{
+                        letter-spacing: 1px;
+    padding-right: 11px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+                    }
+                }
+
+                &__textchild {
+                    padding-left: 14px;
+                }
+            }
+           
+        }
+
+      
+
+        &iron {
+            // left: -54px;
+            top: 63px;
+            right: -73px;
+            @include tab {
+                top: -2px;
+                right: 8px;
+                margin-top: 17px;
+            }
+            @include sp {
+                top: -2px;
+                right: 20px;
+                margin-top: 17px;
+            }
+            .c-uses {
+                &__item {
+                    &img {
+                        width: 83px;
+                        @include sp {
+                            width: 45px;
+                            transform: scaleX(-1);
+                        }
+                    
+                    }
+
+                    &text {
+                        padding-left: 18px;
+                        margin-bottom: 34px;
+                        @include tab1200 {
+                            width: 128px;
+                        }
+                        @include sp {
+                            padding-left: 0px;
+    margin-bottom: 34px;
+    left: 0px;
+    bottom: -15px;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+                        }
+                    }
+                }
+                
+                &__textchild {
+                    padding-left: 17px;
+                }
+            }
+        }
+    
+        &aerosol {
+            right: -18px;
+            @include tab {
+                right: 0;
+                margin-top: 60px;
+
+            }
+            @include sp {
+                margin-top: 0px;
+                justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-right: 62px;
+            }
+            &.c-uses {
+                &__itemdaily {
+                    &::before {
+                        left: 40px;
+                        transform: translateX(0);
+                    }
+                }
+            }
+
+            .c-uses {
+                &__itemimg {
+                    margin-left: 96px;
+                    @include sp {
+                        width: 30px;
+                        margin-left: 0;
+                    }
+                    @include tab {
+                        margin-left: 40px;
+                    }
+                }
+
+                &__textchild {
+                    padding-left: 20px;
+                }
+
+                &__itemtext {
+                    padding-left: 18px;
+                    margin-left: 0;
+                    margin-top: 47px;
+                    @include sp {
+                        padding-left: 0;  
+                        padding-right: 18px;
+                    }
+                }
+
+              
+            }
+        }
+    
+        &bulb {
+            top: 32px;
+            left: 6%;
+            @include tab {
+                top: 0;
+                left: 0;
+            }
+
+            .c-uses {
+                padding-bottom: 169px;
+                &__item {
+                    &img { 
+                        width: 59px;
+                        @include sp {
+                            width: 38px;
+                        }
+                       
+                     
+                    }        
+
+                    &text {
+                        margin-top: -43px;
+                        position: relative;
+                        padding-left: 6%;
+                        margin-left: -6%;
+                        margin-bottom: 0;
+                        @include tab1200 {
+                            width: 100px;
+                        }
+                        @include tab {
+                            margin-left: -12px;
+                        }
+                    }
+                }
+    
+                &__textchild {
+                    padding-left: 12px;
+                }
+            }
+        }
+    
+        &face {
+            top: 75px;
+            right: -11%;
+            @include tab {
+                top: 0;
+                left: 0;
+            }
+            // @include tab1200 {
+            //     width: 200px;
+            // }
+
+            .c-uses {
+                &__item {
+                    &img {
+                        top: -25px;
+                        left: -15%;
+                        width: 155px;
+                     
+                        position: relative;
+                        padding-top: 50px;
+                        display: flex;
+                        justify-content: center;
+                        @include sp {
+                            width: 109px;
+                        }
+                    }
+
+                    &text {
+                        margin-top: 31px;
+                        position: relative;
+                        padding-left: 22%;
+                        margin-left: -40%;
+                        @include  tab1200 {
+                            padding-left: 25px;
+                        }
+                    }
+    
+            
+                }
+    
+                &__textchild {
+                    padding-left: 47px;
+                }
+            }
+        }
+    
+        &pillow {
+            top: 51px;
+            left: 5%;
+            flex-direction: row-reverse;
+            @include tab {
+                top: 0;
+                left: 0;
+            }
+            // @include tab1200 {
+            //     width: 200px;
+            // }
+
+            .c-uses {
+                &__item {
+                    &img {
+                        width: 127px;
+                        @include sp {
+                            width: 63px;
+                        }
+                    }
+
+                    &text {
+                        left: 16px;
+                        padding-right: 22px;
+                        margin-top: -45px;
+                        // @include tab1200 {
+                        //     width: 100px;
+                        // }
+                    }
+                }
+                
+                &__textchild {
+                    padding-right: 12px;
+                }
+            }
+        }
+    
+        &bath {
+            left: 1%;
+            top: -33px;
+            flex-direction: row-reverse;
+            @include tab {
+                left: 0;
+                top: 0;
+            }
+
+            .c-uses {
+                &__item {
+                    &img {
+                        width: 162px;
+                        @include sp {
+                            width: 81px;
+                        }
+                    }
+
+                    &text {
+                        padding-right: 30px;
+                        margin-top: -50px;
+                        left: 12px;
+                    }
+                }
+    
+                &__textchild {
+                    padding-right: 26px;
+                }
+            }
+        }
+    
+        &box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+    }
+
+ 
+    &__itemimg {
+        z-index: 2;
+    }
+
+    &__itemtext {
+        line-height: 2;
+        letter-spacing: 0.1em;
+        position: relative;
+        border-bottom: 1px dashed #636363;
+        display: inline-block;
+        z-index: 1;
+    }
+
+}

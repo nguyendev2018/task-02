@@ -10,6 +10,7 @@
         padding-left: 26.5px;
         padding-right: 26.5px;
     }
+
     &__boxtitle {
         display: flex;
         justify-content: center;
@@ -33,9 +34,9 @@
             margin-left: -7px;
             @include sp {
                 font-size: 1.2rem;
-    letter-spacing: 0.1em;
-    margin-left: -2px;
-    margin-bottom: -6px;
+                letter-spacing: 0.1em;
+                margin-left: -2px;
+                margin-bottom: -6px;
             }
         }
 
@@ -45,7 +46,7 @@
             letter-spacing: 9px;
             @include sp {
                 font-size: 2rem;
-             letter-spacing: 4px;
+                letter-spacing: 4px;
             }
             
         }
@@ -74,7 +75,7 @@
                 justify-content: space-between;
                 align-items: flex-end;
             }
-            @include sp{
+            @include sp {
                 margin-top: 62px;
             }
         }
@@ -167,6 +168,7 @@
 
         &bottle {
             justify-content: flex-start;
+
             .c-uses {
                 &__textchild {
                     padding-left: 10px;
@@ -176,7 +178,7 @@
                     padding-left: 8px;
                     margin-left: 0;
                     margin-bottom: -6px;
-                    position: relative;   
+                    position: relative;
                     @include sp {
                         margin-bottom: -25px;
                         line-height: 1.5;
@@ -228,11 +230,11 @@
                         width: 98px;
                         white-space: normal;
                     }
-                    @include sp{
+                    @include sp {
                         letter-spacing: 1px;
-    padding-right: 11px;
-    line-height: 1.5;
-    margin-bottom: 4px;
+                        padding-right: 11px;
+                        line-height: 1.5;
+                        margin-bottom: 4px;
                     }
                 }
 
@@ -259,6 +261,7 @@
                 right: 20px;
                 margin-top: 17px;
             }
+
             .c-uses {
                 &__item {
                     &img {
@@ -277,12 +280,12 @@
                             width: 128px;
                         }
                         @include sp {
-                            padding-left: 0px;
-    margin-bottom: 34px;
-    left: 0px;
-    bottom: -15px;
-    line-height: 1.5;
-    letter-spacing: 0.1rem;
+                            padding-left: 0;
+                            margin-bottom: 34px;
+                            left: 0;
+                            bottom: -15px;
+                            line-height: 1.5;
+                            letter-spacing: 0.1rem;
                         }
                     }
                 }
@@ -301,11 +304,12 @@
 
             }
             @include sp {
-                margin-top: 0px;
+                margin-top: 0;
                 justify-content: flex-end;
-    flex-direction: row-reverse;
-    margin-right: 62px;
+                flex-direction: row-reverse;
+                margin-right: 62px;
             }
+
             &.c-uses {
                 &__itemdaily {
                     &::before {
@@ -336,7 +340,7 @@
                     margin-left: 0;
                     margin-top: 47px;
                     @include sp {
-                        padding-left: 0;  
+                        padding-left: 0;
                         padding-right: 18px;
                     }
                 }
@@ -355,6 +359,7 @@
 
             .c-uses {
                 padding-bottom: 169px;
+
                 &__item {
                     &img { 
                         width: 59px;

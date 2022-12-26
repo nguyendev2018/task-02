@@ -1,119 +1,167 @@
 .c-col {
     padding-left: 98px;
     padding-right: 98px;
+    @include tab {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     &__box {
         display: flex;
         align-items: center;
         border-bottom: 1px solid $primary-color;
-       margin-bottom: 35px;
-       position: relative;
-        &layer{
-            position: absolute;
-    top: 18px;
-    left: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        margin-bottom: 35px;
+        position: relative;
+        @include sp {
+            border-bottom: none;
         }
-        &text{
+
+        &info {
+            display: flex;
+            flex-direction: column;      
+        }   
+
+        &number {
+            display: flex;
+        }
+
+        &top {
+            display: flex;
+        }
+
+        &layer {
+            position: absolute;
+            top: 18px;
+            left: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &text {
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin-left: 15px;
             margin-top: 3px;
-            &desc{
+
+            &desc {
                 letter-spacing: 0.1em;
             }
           
         }
+
         &arrow {
             position: absolute;
             right: 0;
-        }
-        }
-        &__text{
-            &desc{
-                letter-spacing: 0.1em;
+            @include tab {
+                top: 38%;
+                transform: translateY(-50%);
             }
-            &title{
-                letter-spacing: 0.1em;
-                font-size: 2.5rem;
+            @include sp {
+                display: none;
             }
         }
-        &__item {
-            &img {
-                width: 277px;
-        height: 100px;
-        position: relative;
-                >img {
-                    border-radius: 8px;
-                    @include sp {
-                        display: none;
-                    }
+    }
+
+    &__text {
+        &desc {
+            letter-spacing: 0.1em;
+        }
+
+        &title {
+            letter-spacing: 0.1em;
+            font-size: 2.5rem;
+            @include sp {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__item {
+        &img {
+            width: 277px;
+            height: 100px;
+            position: relative;
+
+            >img {
+                border-radius: 8px;
+                @include sp {
+                    display: none;
                 }
             }
-            &number{
-                font-size: 4.6rem;
-        line-height: 1;
-        color: #176b6a;
-        position: relative;
-        top: -12px;
-        left: 1px;
-        letter-spacing: 0.1em;
-            }
         }
-    
-        &__link {
-        
-            text-align: right;
+
+        &number {
+            font-size: 4.6rem;
+            line-height: 1;
             color: #176b6a;
-            font-size: 1.3rem;
-            line-height: 1.7;
-            letter-spacing: 0;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-            margin-top: 9px;
-            margin-bottom: 4px;
-            display: none;
+            position: relative;
+            top: -12px;
+            left: 1px;
+            letter-spacing: 0.1em;
             @include sp {
-                display: block;
+                font-size: 2.3rem;
             }
         }
-        &__bottom {
-            margin-top: 2px;
-            letter-spacing: 1.8px;
-        }
-        &__desc{
-            letter-spacing: 1.4px;
-            line-height: 1.5;
-            max-width: 820px;
-            margin-top: 22px;
-            transform: translateY(-2px);
-            margin-bottom: 27px;
-        }
-        &__button {
-            width: 100%;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            background: $primary-color;
-            border-radius: 4px;
-            text-align: center;
-            display: none;
-            @include sp {
-                display: block;
-            }
-            // >img {
-            //     transform: rotate(180deg);
-    
-            //     &.is-active {
-            //         transform: rotate(360deg);
-                  
-            //     }
-            // }
-         
-        }
-        
     }
+    
+    &__link {
+        
+        text-align: right;
+        color: #176b6a;
+        font-size: 1.3rem;
+        line-height: 1.7;
+        letter-spacing: 0;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        margin-top: 9px;
+        margin-bottom: 4px;
+        display: none;
+        @include sp {
+            display: block;
+        }
+    }
+
+    &__bottom {
+        margin-top: 2px;
+        letter-spacing: 1.8px;
+    }
+
+    &__desc {
+        letter-spacing: 1.4px;
+        line-height: 1.5;
+        max-width: 820px;
+        margin-top: 22px;
+        transform: translateY(-2px);
+        margin-bottom: 27px;
+        @include sp {
+            font-size: 1.1rem;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: $primary-color;
+        border-radius: 4px;
+        text-align: center;
+        display: none;
+        @include sp {
+            display: block;
+        }
+        // >img {
+        //     transform: rotate(180deg);
+    
+        //     &.is-active {
+        //         transform: rotate(360deg);
+                  
+        //     }
+        // }
+         
+    }
+        
+}
 
  

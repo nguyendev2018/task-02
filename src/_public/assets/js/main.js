@@ -14,11 +14,17 @@ $(window).on('resize', function() {
                     slidesToShow: 1,
                     slidesToScroll: 2,
                   }
+                },{
+                  breakpoint: 400,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 2,
+                  }
                 }
             ]
           });
     }
-    if($(window).width() <=768) {
+    if($(window).width() <=767) {
       $(".c-col__bottom").slideUp();
 $(".c-col__button").click(function (e) {
     $(this).prev().slideToggle(); 

@@ -1,4 +1,6 @@
 .c-footer {
+    padding-bottom: 60px;
+
     &__list {
         display: flex;
         justify-content: space-between;
@@ -17,8 +19,9 @@
     &__menu {
         li {
             line-height: 2;
-           margin-bottom: -3px;
+            margin-bottom: -3px;
             letter-spacing: 0.1em;
+
             &:last-child {
                 margin-bottom: 0;
             }

@@ -52,6 +52,6 @@ other
     transform: translateX(17px);
     border-bottom: 2px solid $black00;
     @include sp {
-        transform: translateX(0);
+        transform: translateX(-4px);
     }
 }

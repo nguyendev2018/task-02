@@ -38,7 +38,7 @@ module.exports = defineConfig(({ mode }) => {
 		publicDir: '_public',
 		base,
 		server: {
-			open: true
+			open: false
 		},
 		build: {
 			outDir: "../dist",
@@ -85,7 +85,7 @@ module.exports = defineConfig(({ mode }) => {
 					optimizationLevel: 7,
 				},
 				jpegTran: {
-					progressive: true,
+					progressive: false,
 				},
 				svgo: {
 					plugins: [
@@ -100,18 +100,18 @@ module.exports = defineConfig(({ mode }) => {
 				},
 			}),
 			Linter({
-				errorOverlay: true,
+				errorOverlay: false,
 				htmlhint: {
 					files: ['src/**/*.{html,ejs}'],
 				},
 				stylelint: {
 					files: ['src/**/*.{vue,css,scss,sass,less,styl,svelte}'],
-					fix: true
+					fix: false
 				},
 				eslint: {
 					files: ['src/_public/assets/js/**/*.js'],
 					options: {
-						fix: true
+						fix: false
 					}
 				}
 			}),

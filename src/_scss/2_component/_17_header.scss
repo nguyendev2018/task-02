@@ -146,7 +146,7 @@
     }
 
     &__menuitem {
-        margin-bottom: 14px;
+        margin-bottom: 15px;
         padding-left: 19px;
         padding-top: 7px;
 
@@ -156,8 +156,12 @@
 
         a {
             font-size: 1.6rem;
-            line-height: 2;
+            line-height: 1.7;
             letter-spacing: 1.9px;
+
+            &.is-active {
+                opacity: 0.7;
+            }
         
         }
     }

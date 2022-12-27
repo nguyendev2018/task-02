@@ -6,48 +6,45 @@
 
   <!-- @content -->
   <main class="p-home">
-    <section class="c-uses l-container--w1120 ">
+    <section class="c-uses l-container--w1120 p-scroll" id="section_2">
       <div class="c-uses__boxtitle">
         <p class="c-uses__titlesmall">使い方いろいろ</p>
         <h2 class="c-uses__titlebig">毎日にハッカ油</h2>
       </div>
       <div class="c-uses__list">
         <div class="c-uses__listtop">
-          <a class="c-uses__item c-uses__itembottle c-uses__itemdaily">
-            <!-- <div class=""> -->
-            <img src="/assets/img/appliances/bottle.png" alt="ハッカ水" class="c-uses__itemimg">
-            <!-- </div> -->
+          <a class="c-uses__item c-uses__itembottle">
+            <picture>
+              <source media="(max-width:767px)" srcset="/assets/img/appliances/mobile/bottle-label.png">
+              <img src="/assets/img/appliances/bottle-label.png" alt="ハッカ水" class="c-uses__itemimg">
+            </picture>
             <div class="c-uses__itemtext">
               ハッカ水
             </div>
           </a>
           <a class="c-uses__item c-uses__itemjar">
-            <div class="c-uses__itemimg">
-              <img src="/assets/img/appliances/jar.png" alt="ハッカ水" class="img-fluid">
-            </div>
+            <picture>
+              <source media="(max-width:767px)" srcset="/assets/img/appliances/mobile/jar.png">
+              <img src="/assets/img/appliances/jar.png" alt="ハッカ水">
+            </picture>
+
             <div class="c-uses__itemtext">
               ハッカの虫除けスプレー
             </div>
           </a>
           <a class="c-uses__item c-uses__itemiron">
-
             <img src="/assets/img/appliances/iron.png" alt="ハッカのリネンウォーター" class="c-uses__itemimg">
-
-            <div class="c-uses__itemtext">
-              <span>
-                ハッカのリネンウォーター
-              </span>
+            <div class="c-uses__itemtext">ハッカのリネンウォーター
             </div>
           </a>
-          <a class="c-uses__item c-uses__itemaerosol c-uses__itemdaily">
-
-
-            <img src="/assets/img/appliances/aerosol.png" alt="ハッカのエアフレッシュナー" class="c-uses__itemimg">
-
+          <a class="c-uses__item c-uses__itemaerosol ">
+            <picture>
+              <source media="(max-width:767px)" srcset="/assets/img/appliances/mobile/aerosol.png">
+              <img src="/assets/img/appliances/aerosol.png" alt="bottle">
+            </picture>
             <div class="c-uses__itemtext">
               ハッカのエアフレッシュナー
             </div>
-
           </a>
         </div>
         <div class="c-uses__listbottom">
@@ -57,15 +54,17 @@
               ハッカの清涼スプレー
             </div>
           </a>
-          <a class="c-uses__item c-uses__itemface c-uses__itemrecommend">
-            <img src="/assets/img/appliances/face-mask.png" alt="ハッカマスク" class="c-uses__itemimg">
+          <a class="c-uses__item c-uses__itemface ">
+            <picture>
+              <source media="(max-width:767px)" srcset="/assets/img/appliances/mobile/mask-label.png">
+              <img src="/assets/img/appliances/mask-label.png" alt="mask-label" class="c-uses__itemimg">
+            </picture>
             <div class="c-uses__itemtext">
               ハッカマスク
             </div>
           </a>
           <a class="c-uses__item c-uses__itempillow">
             <img src="/assets/img/appliances/pillow.png" alt="ハッカで安息" class="c-uses__itemimg">
-
             <div class="c-uses__itemtext">
               ハッカで安息
             </div>
@@ -80,8 +79,8 @@
 
       </div>
     </section>
-    <section class="c-point">
-      <seciton class="c-pointnew">
+    <section class="c-point" id="section_3">
+      <seciton class="c-pointnew page-sroll" id="c-pointnew">
         <div class="l-container--w1030">
           <div class="c-point__boxtitle">
             <div class="c-point__number">
@@ -102,7 +101,7 @@
 
           </div>
           <div class="c-point__infodesc u-hideshow">
-            鼻や口から入った香りの信号は、視床下部などに直接作用し <br>
+            鼻や口から入った香りの信号は、視床下部などに直接作用し
             気分をリフレッシュさせてくれます。
           </div>
           <div class="c-point__list">
@@ -132,7 +131,7 @@
           </div>
         </div>
       </seciton>
-      <seciton class="c-pointhot">
+      <seciton class="c-pointhot page-scroll">
         <div class="l-container--w1030">
           <div class="c-point__boxtitle">
             <div class="c-point__number">
@@ -162,9 +161,9 @@
                 <div class="c-point__item">
                   <div class="c-point__itemimg">
                     <img src="<%= item.url %>" alt="" class="img-100">
-                    <a href="#" class="c-point__itembutton">
+                    <div class="c-point__itembutton">
                       <img src="./assets/img/button/img-more.png" alt="img-more">
-                    </a>
+                    </div>
                   </div>
                   <div class="c-point__itemlayer">
                     <h3 class="c-point__itemtitle">
@@ -197,14 +196,14 @@
             <div class="c-point__info">
               <h2 class="c-point__infotitle">ハウスキーピング</h2>
               <div class="c-point__infodesc u-showhide">
-                ハッカ油に含まれるメントールは、お部屋のスッキリを演出。<br>
+                ハッカ油に含まれるメントールは、お部屋のスッキリを演出。
                 お家の害虫対策にもおすすめです。
               </div>
             </div>
 
           </div>
           <div class="c-point__infodesc u-hideshow">
-            ハッカ油に含まれるメントールは、お部屋のスッキリを演出。<br>
+            ハッカ油に含まれるメントールは、お部屋のスッキリを演出。
             お家の害虫対策にもおすすめです。
           </div>
           <div class="c-point__list">
@@ -213,9 +212,9 @@
                 <div class="c-point__item">
                   <div class="c-point__itemimg">
                     <img src="<%= item.url %>" alt="" class="img-100">
-                    <a href="#" class="c-point__itembutton">
+                    <div class="c-point__itembutton">
                       <img src="./assets/img/button/img-more.png" alt="img-more">
-                    </a>
+                    </div>
                   </div>
                   <div class="c-point__itemlayer">
                     <h3 class="c-point__itemtitle">
@@ -237,7 +236,7 @@
 
       <section class="c-brand l-container--w1120">
         <h2 class="c-brand__title">
-          お買い求めは全国のドラッグストア、またはこちらから
+          お買い求めは全国のドラッグストア <br class="u-hideshow"> 、またはこちらから
         </h2>
         <div class="c-brand__list">
           <% if(typeof brands !='undefined' ) { %>
@@ -252,7 +251,7 @@
       </section>
     </section>
 
-    <section class="c-qa l-container--w1030">
+    <section class="c-qa l-container--w1030 page-scroll" id="section_4">
       <h2 class="c-qa__title">Q&A</h2>
       <dl class="c-qa__list">
         <% if(typeof medicans !='undefined' ) { %>
@@ -275,8 +274,8 @@
 
 
     </section>
-    <section class="c-medicine l-container--w1030">
-      <a href="">
+    <section class="c-medicine l-container--w1030" id="section_5">
+      <a href="#">
         <picture>
           <source media="(max-width: 767px)" srcset="./assets/img/bg/bg-medicine/mobile.jpg"
             class="img-100 c-medicine__img">
@@ -285,7 +284,7 @@
         </picture>
       </a>
     </section>
-    <section class="c-col l-container--w1030">
+    <section class="c-col l-container--w1030 page-scroll" id="section_6">
       <% if(typeof cols !='undefined' ) { %>
         <% cols.col && cols.col.forEach(item=> { %>
           <div class="c-col__box">

@@ -5,41 +5,42 @@
     background-size: contain;
     padding-top: 98px;
     padding-bottom: 63px;
+    @include sp {
+        padding-top: 22px;
+    }     
 
     &new {
         margin-bottom: 107px;
         display: block;
-
-        &__number {
-            &img {
-                width: 68px;
-                @include sp {
-                    width: 43px;
-                }
-            }
+        @include sp {
+            margin-bottom: 35px;
         }
+        
     }
 
     &hot {
         margin-bottom: 106px;
         display: block;
+        @include sp {
+            margin-bottom: 34px;
+        }
 
         &__number {
             margin-bottom: 105px;
             display: block;
 
-            &img {
-                width: 73px;
-            }
+            // &img {
+            //     width: 73px;
+            // }
         }
     }
 
     &feature {
         &__number {
-            &img {
-                width: 73px;
-                margin-bottom: 20px;
-            }
+            // &img {
+            //     width: 73px;
+            //     margin-bottom: 20px;
+            // }
         }
     }
     //ANCHOR title
@@ -48,7 +49,7 @@
         margin-top: 10px;
         @include sp {
             margin-left: 15px;
-            margin-top: 39px;
+            margin-top: 43px;
         }
 
         &title {
@@ -70,7 +71,7 @@
             @include sp {
                 transform: translateX(0);
                 line-height: 1.6;
-                letter-spacing: 0.3px;
+                letter-spacing: 0.1px;
                 margin-bottom: 20px;
             }
         }
@@ -79,13 +80,13 @@
   
 
     &__number {
-        &img {
-         
+        &img {  
+            width: 68px;
             margin-bottom: 20px;
             @include sp {
-            
+                width: 40px;
           
-                margin-top: 14px;
+                margin-top: 17px;
                 margin-left: -6px;
                 margin-bottom: 9px;
             }
@@ -101,8 +102,8 @@
         margin-top: 13px;
         @include sp {
             font-size: 1.6rem;
-            margin-left: -15px;
-            margin-top: 8px;
+            margin-left: -16px;
+            margin-top: 7px;
         }
     }
 
@@ -128,8 +129,25 @@
 
         &button {
             position: absolute;
-            bottom: 20px;
-            right: 20px;
+            bottom: 0;
+            right: 0;
+            cursor: pointer;
+            padding-right: 20px;
+            padding-bottom: 20px;
+          
+            
+            &:hover {
+                opacity: 0.7;
+                filter: alpha(opacity=70);
+            }
+            @include sp {
+                padding-right: 16px;
+                padding-bottom: 15px;
+
+                >img {
+                    width: 60px;
+                }
+            }
         }
 
         &img {
@@ -209,8 +227,8 @@
             margin-left: 120px;
             margin-bottom: 52px;
             @include sp {
-                margin-left: 15px;
-                margin-bottom: 6px;
+                margin-left: 16px;
+                margin-bottom: 4px;
             }
         }
 
